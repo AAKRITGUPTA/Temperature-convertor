@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main">
+        <h1>temperature converter</h1>
+        <select  id="temperature1"  onchange="text1()">
+            <option value="0">select one</option>
+            <option value="1">fahrenheit</option>
+            <option value="2">celsius</option>
+            <option value="3">kelvin</option>
+        </select>
+
+            <div id="inp1" class="inp">
+                <input type="text" id="val" value="" onchange="getresult()"  onblur="getresult2()">
+                <div id="txt1" class="txt">deg</div>
+            </div>
+        <select  id="temperature2" onchange="text2()"> 
+            <option value="0">select one</option>
+            <option value="1">fahrenheit</option>
+            <option value="2">celsius</option>
+            <option value="3">kelvin</option>
+        </select>
+            <div id="inp2" class="inp">
+                <input type="text" id="result" value="">
+                <div id="txt2" class="txt">deg</div>
+            </div>
+        <div id="text2">
+            formula of : <span id="formula"></span>
+        </div>
+        </div>
+   <script src="script.js"></script>
+</body>
+</html>
